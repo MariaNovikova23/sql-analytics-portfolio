@@ -51,20 +51,7 @@
 - Повторные vs. однократные клиенты
 - Самые прибыльные категории
 
-## 📂 Файлы проекта
-ecommerce-sales-analysis/
-├── ecommerce_sales_project.xlsx
-├── queries.sql
-├── README.md
-└── images/
-    ├── monthly_sales.png
-    ├── repeat_vs_new_customers.png
-    └── top_categories.png
-
 ## 🧠 Выводы
 - Повторные клиенты генерируют ~60% выручки
 - Топ-3 категории: Electronics, Clothing, Home
 - Основная часть заказов приходится на возраст 25–34
-
-## 👤 Автор
-[Твоё Имя] — начинающий аналитик данных, фокус на SQL, Excel, Python и визуализации.
