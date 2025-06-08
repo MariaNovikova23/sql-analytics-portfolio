@@ -1,7 +1,7 @@
 -- Общая выручка
-SELECT SUM(total_amount) AS total_revenue
+```SELECT SUM(total_amount) AS total_revenue
 FROM orders;
-
+```
 -- Количество заказов по месяцам
 SELECT
     DATE_TRUNC('month', order_date) AS month,
