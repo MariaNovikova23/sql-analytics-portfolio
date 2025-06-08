@@ -1,12 +1,12 @@
-## 📁 SQL-запросы для проекта E-commerce Sales
+## 📊 Общая выручка
 
--- 📊 Общая выручка
 SELECT 
     SUM("total_amount") AS "total_revenue"
 FROM 
     "orders";
 
--- 📅 Количество заказов и выручка по месяцам
+## 📅 Количество заказов и выручка по месяцам
+
 SELECT
     DATE_TRUNC('month', "order_date") AS "month",
     COUNT("order_id") AS "total_orders",
@@ -18,13 +18,15 @@ GROUP BY
 ORDER BY 
     "month";
 
--- 💵 Средний чек по заказу
+## 💵 Средний чек по заказу
+
 SELECT 
     AVG("total_amount") AS "average_order_value"
 FROM 
     "orders";
 
--- 🔁 Повторные и однократные клиенты
+## 🔁 Повторные и однократные клиенты
+
 SELECT
     "repeat_type",
     COUNT(DISTINCT "customer_id") AS "num_customers"
@@ -43,7 +45,8 @@ FROM (
 GROUP BY 
     "repeat_type";
 
--- 🛒 ТОП-5 товаров по количеству продаж
+## 🛒 ТОП-5 товаров по количеству продаж
+
 SELECT
     "p"."product_id",
     "p"."category",
@@ -59,7 +62,8 @@ ORDER BY
     "total_units_sold" DESC
 LIMIT 5;
 
--- 💰 Customer Lifetime Value (CLV) — ТОП-10 клиентов
+## 💰 Customer Lifetime Value (CLV) — ТОП-10 клиентов
+
 SELECT
     "c"."customer_id",
     "c"."city",
