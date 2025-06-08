@@ -1,16 +1,15 @@
--- Общая выручка
+## Общая выручка
 ```
 SELECT SUM(total_amount) AS total_revenue FROM orders;
 ```
 -- Количество заказов по месяцам
-SELECT
-    DATE_TRUNC('month', order_date) AS month,
-    COUNT(order_id) AS total_orders,
-    SUM(total_amount) AS revenue
-FROM orders
+```
+SELECT DATE_TRUNC('month', order_date) AS month,
+COUNT(order_id) AS total_orders,
+SUM(total_amount) AS revenue FROM orders
 GROUP BY month
 ORDER BY month;
-
+```
 -- Средний чек по заказу
 SELECT AVG(total_amount) AS average_order_value
 FROM orders;
