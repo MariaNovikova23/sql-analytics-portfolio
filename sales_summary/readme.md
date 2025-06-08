@@ -20,3 +20,6 @@ CREATE TABLE sales (
     quantity INT,
     price NUMERIC
 );
+
+
+📊 Данные о продажах находятся в [sales_data.xlsx](sales_data.xlsx).  
