@@ -27,8 +27,8 @@ GROUP BY repeat_type;
 ## ТОП-5 товаров по продажам
 ```
 SELECT p.product_id, p.category,
-    SUM(o.quantity) AS total_units_sold,
-    SUM(o.total_amount) AS total_revenue
+SUM(o.quantity) AS total_units_sold,
+SUM(o.total_amount) AS total_revenue
 FROM orders o JOIN products p ON o.product_id = p.product_id
 GROUP BY p.product_id, p.category
 ORDER BY total_units_sold DESC
