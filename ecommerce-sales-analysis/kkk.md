@@ -1,3 +1,5 @@
+## 📁 SQL-запросы для проекта E-commerce Sales
+
 -- 📊 Общая выручка
 SELECT 
     SUM("total_amount") AS "total_revenue"
